@@ -20,22 +20,20 @@ public class Math_Operators {
             System.out.print("Enter the operation you would like to commit to those numbers: ");
             decision = input.next();
 
-//            If Decision and result printing
-            if (decision.equals("+"))
-            {
-                System.out.println(number1 + " + " + number2 + " = " + (number1+number2));
-            }
-            if (decision.equals("-"))
-            {
-                System.out.println(number1 + " - " + number2 + " = " + (number1-number2));
-            }
-            if (decision.equals("/"))
-            {
-                System.out.println(number1 + " / " + number2 + " = " + (number1/number2));
-            }
-            if (decision.equals("*"))
-            {
-                System.out.println(number1 + " * " + number2 + " = " + (number1*number2));
+//          Decision-making with conditional switch
+            switch(decision){
+                case "+":
+                    System.out.println(number1 + " + " + number2 + " = " + (number1+number2));
+                    break;
+                case "-":
+                    System.out.println(number1 + " - " + number2 + " = " + (number1-number2));
+                    break;
+                case "/":
+                    System.out.println(number1 + " / " + number2 + " = " + (number1/number2));
+                    break;
+                case "*":
+                    System.out.println(number1 + " * " + number2 + " = " + (number1*number2));
+                    break;
             }
         }
 }
